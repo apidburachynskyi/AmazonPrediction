@@ -1,21 +1,3 @@
-"""
-train_bce.py
-
-Train GMF / MLP / NeuMF with Binary Cross-Entropy.
-
-Important:
-- The model is trained with BCE.
-- The best checkpoint is selected using validation HR@10 by default.
-- NDCG@10 is reported together with HR@10.
-- Epoch 0 is included: ranking metrics of the randomly initialized model before training.
-
-Example:
-    python train_bce.py --model all --processed_dir Data/Processed_Appliances --output_dir Runs/Appliances/BCE_hr --epochs 30 --batch_size 512 --lr 0.0001 --embedding_dim 8 --layers 64,32,16,8 --dropout 0.4 --weight_decay 0.000001 --patience 10 --selection_metric hr
-
-Final evaluation:
-    python evaluate_ranking.py --model all --processed_dir Data/Processed_Appliances --runs_dir Runs/Appliances/BCE_hr --k 10 --num_negatives 99
-"""
-
 import argparse
 import json
 from pathlib import Path
