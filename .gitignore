@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+Runs/**
+
+!Runs/.gitkeep
+!Runs/Appliances/
+!Runs/Appliances/.gitkeep
+
+*.pt
+*.pth
+*.zip
