@@ -1,12 +1,3 @@
-"""
-negative_sampling.py
-
-Create negative samples for Neural Collaborative Filtering.
-
-Usage:
-    python negative_sampling.py --processed_dir processed --num_negatives 4
-"""
-
 import argparse
 from pathlib import Path
 
